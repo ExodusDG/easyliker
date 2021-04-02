@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyLiker - главная страница</title>
+    <link rel="shortcut icon" href="/image/favicon.svg" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <!-- NAVBAR -->
+            <nav>
+                <ul class="header__navbar">
+                    <li>
+                        <a href="/"><img src="image/landing/logotype.png" alt=""></a>
+                    </li>
+                    <li>
+                        <ul class="header__navbar_links">
+                            <a href="#advantages">
+                                <li>Преимущества</li>
+                            </a>
+                            <a href="#tariffs">
+                                <li>Тарифы
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li>Документы</li>
+                            </a>
+                            <a href="auth.html">
+                                <li class="auth_button"><img src="image/landing/log-in.svg" alt="">
+                                    <p>Вход</p>
+                                </li>
+                            </a>
+                            <a href="register.html">
+                                <li><button class="navbar__register">Регистрация</button></li>
+                            </a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- MOBILE NAVBAR -->
+            <div class="mob_menu">
+                <nav id="mobile_navbar">
+                    <ul class="mb_header_navbar">
+                        <li>
+                            <a href="/"><img src="image/landing/logotype.png" alt=""></a>
+                        </li>
+                        <li><button class="mb_navbar__register">Регистрация</button></li>
+                        <li>
+                            <div class="hamburger_block">
+                                <button style="outline: none;" class="hamburger hamburger--spring" type="button" id="hamburger-id">
+                                <span class="hamburger-box">
+                                  <span class="hamburger-inner"></span>
+                                </span>
+                              </button>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mob_menu_dropdown">
+                    <hr class="mob-menu-hr">
+                    <div class="mob_menu_links">
+
+                        <a href="#advantages">
+                            <span>Преимущества</span><br>
+                        </a>
+                        <a href="#tariffs">
+                            <span>Тарифы</span><br>
+                        </a>
+                        <a href="#documents">
+                            <span>Документы</span><br>
+                        </a>
+                        <a href="index.html">
+                            <span>Вход</span><br>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ХЕДЕР -->
+            <div class="header__body">
+                <div class="header__body_text">
+                    <p class="header__body_title">Самое качественное <span> продвижение ваших социальных сетей</span> </p>
+                    <div class="header__body_buttons">
+                        <button class="header__body_reg" id="landing_reg"><img src="image/landing/register.svg" alt=""> Регистрация</button>
+                        <button class="header__body_auth" id="landing_auth"><img src="image/landing/log-in-blue.svg" alt=""> Войти</button>
+                        <button class="header__body_auth" id="landing_profile"><img src="image/landing/log-in-blue.svg" alt=""> Профиль</button>
+                    </div>
+                </div>
+                <img src="image/landing/main_image.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- БЛОК -->
+    <section class="block">
+        <div class="container">
+            <div class="block__body">
+                <p class="block__body_title">Хотите заказать качественное продвижение своей социально сети?</p>
+                <div class="block__body_text">
+                    <p>Это можно сделать очень легко. Вам достаточно заказать любую из предоставляемых нами услуг и увидеть именно тот результат, который вы ждали!</p>
+                    <a href="#">ЗАКАЗАТЬ <img src="image/landing/line_right.svg" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- НАШИ ПРЕИМУЩЕСТВА -->
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <p class="advantages__title">НАШИ ПРЕИМУЩЕСТВА</p>
+            <div class="advantages__cards">
+                <div class="advantages__card">
+                    <img src="image/landing/advantages_1.svg" alt="">
+                    <div class="advantages__text">
+                        <p class="advantages__text_title">Качество</p>
+                        <p class="advantages__text_desc">Мы подбираем живые аккаунты высокого качества, которые подходят под тематику вашего заказа.</p>
+                    </div>
+                </div>
+                <div class="advantages__card">
+                    <img src="image/landing/advantages_2.svg" alt="">
+                    <div class="advantages__text">
+                        <p class="advantages__text_title">Моментальный старт</p>
+                        <p class="advantages__text_desc">Все задания начинают своё выполнение сразу, независимо от нагрузки. Отслеживайте задание в реальном времени через шкалу выполнения</p>
+                    </div>
+                </div>
+                <div class="advantages__card">
+                    <img src="image/landing/advantages_3.svg" alt="">
+                    <div class="advantages__text">
+                        <p class="advantages__text_title">Реферальная система</p>
+                        <p class="advantages__text_desc">Реферальная система до 30% с рейтингом - зарабатывай с пополнений ваших друзей!</p>
+                    </div>
+                </div>
+                <div class="advantages__card">
+                    <img src="image/landing/advantages_4.svg" alt="">
+                    <div class="advantages__text">
+                        <p class="advantages__text_title">Быстрый старт</p>
+                        <p class="advantages__text_desc">Используй наши услуги без регистрации, мы синхронизируем данные сессии с новым зарегистрированным аккаунтом!</p>
+                    </div>
+                </div>
+                <div class="advantages__card">
+                    <img src="image/landing/advantages_5.svg" alt="">
+                    <div class="advantages__text">
+                        <p class="advantages__text_title">Низкие цены</p>
+                        <p class="advantages__text_desc">Самые низкие цены среди конкурентов. Удобное API для реселлеров и все способы оплаты без комиссии.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ТАРИФЫ -->
+    <section class="tariffs" id="tariffs">
+        <div class="container">
+            <div class="tariffs__text">
+                <p>Для начала вам нужно выбрать платформу <img src="image/landing/smile.png" alt=""></p>
+                <span>После выбора платформы вы будете перенаправлены на страницу выбора услуги</span>
+            </div>
+            <div class="tariffs__cards">
+                <div class="tariff_vk tariff_card">
+                    <div class="tariff_content">
+                        <img src="image/vk.svg" alt="">
+                        <p class="tariff_name">
+                            Вконтакте
+                        </p>
+                    </div>
+                </div>
+                <div class="tariff_yt tariff_card">
+                    <div class="tariff_content">
+                        <img src="image/yt.svg" alt="">
+                        <p class="tariff_name">
+                            YouTube
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tariffs__cards-2">
+                <div class="tariff_inst tariff_card">
+                    <div class="tariff_content">
+                        <img src="image/inst.svg" alt="">
+                        <p class="tariff_name">
+                            Instagram
+                        </p>
+                    </div>
+                </div>
+                <div class="tariffs__cards_2_small">
+                    <div class="tariff_tk tariff_card">
+                        <div class="tariff_content">
+                            <img src="image/tk.svg" alt="">
+                            <p class="tariff_name">
+                                TikTok
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tariff_tg tariff_card">
+                        <div class="tariff_content">
+                            <img src="image/tg.svg" alt="">
+                            <p class="tariff_name">
+                                Telegram
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="tariff__background_text">
+                ТАРИФЫ
+            </p>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <section class="land_footer">
+        <div class="container">
+            <div class="land__footer_body">
+                <div class="land_footer_content">
+                    <img src="image/landing/logotype.png" alt="">
+                    <p style="font-size: 18px; color: #868686; margin-top: 5px;">© 2020</p>
+                </div>
+                <div class="land_footer_content land_footer_links">
+                    <p>
+                        <a href="#advantages">
+                            <span>Преимущества</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#tariffs">
+                            <span>Тарифы</span>
+                        </a>
+                    </p>
+                </div>
+                <div class="land_footer_content land_footer_links">
+                    <p>
+                        <a href="register.html">
+                            <span>Регистрация</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="auth.html">
+                            <span>Вход</span>
+                        </a>
+                    </p>
+                </div>
+                <div class="land_footer_content">
+                    <p style="color: #868686; font-size: 18px;">Контакты</p>
+                    <div class="footer-contacts">
+                        <a href="#"><img src="image/landing/cont_tg.svg" alt=""></a>
+                        <a href="#"><img src="image/landing/cont_mail.svg" alt=""></a>
+                        <a href="#"><img src="image/landing/cont_vk.svg" alt=""></a>
+                        <a href="#"><img src="image/landing/cont_inst.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>

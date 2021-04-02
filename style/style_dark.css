@@ -1,0 +1,802 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul>li {
+    list-style-type: none;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #272727;
+    background: #222F3B;
+}
+
+button {
+    outline: none;
+}
+
+a {
+    text-decoration: none
+}
+
+
+/* HEADER*/
+
+.header {
+    margin-top: 20px;
+    height: 100vh;
+}
+
+.header__navbar {
+    font-weight: 500;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header__navbar_links {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar_links a>li {
+    list-style: none;
+    margin-right: 40px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+}
+
+.header__navbar_links>li>a {
+    color: #272727;
+}
+
+.auth_button {
+    display: flex;
+}
+
+.auth_button img {
+    margin-right: 10px;
+    bottom: 0px;
+    position: relative;
+}
+
+.header__navbar_links li:hover {
+    color: #3651CD;
+}
+
+.navbar__register {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    width: 160px;
+    height: 45px;
+    background: rgba(65, 99, 255, 0.85);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    bottom: 12px;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.navbar__register:hover {
+    background: transparent;
+    border: 2px solid #3651CD;
+    color: #3651CD;
+}
+
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.header__body_text {
+    margin-top: 130px;
+    width: 585px;
+}
+
+.header__body_title {
+    font-weight: 700;
+    font-size: 56px;
+    color: #272727;
+}
+
+.header__body_title span {
+    color: #393939;
+    font-weight: 400;
+    line-height: 76px;
+}
+
+.header__body_buttons {
+    margin-top: 100px;
+}
+
+.header__body_reg {
+    width: 285px;
+    height: 60px;
+    background: #5D7AFF;
+    color: white;
+    margin-right: 70px;
+    border: none;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    border: 2px solid transparent;
+    padding-bottom: 3px;
+}
+
+.header__body_auth {
+    width: 220px;
+    height: 60px;
+    background: transparent;
+    color: #5D7AFF;
+    border: none;
+    border: 2px solid #5D7AFF;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.header__body_buttons>button>img {
+    position: relative;
+    right: 10px;
+    top: 2px;
+}
+
+#landing_profile {
+    display: none;
+}
+
+
+/* BLOCK */
+
+.block {
+    background: linear-gradient(92.15deg, #F8FBFF 0%, #EFF7FF 100.63%);
+    padding-bottom: 90px;
+    padding-top: 90px;
+}
+
+.block__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block__body_title {
+    width: 660px;
+    color: #271D30;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 67px;
+}
+
+.block__body_text p {
+    color: #574D60;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    width: 365px;
+}
+
+.block__body_text a {
+    color: #0023C4;
+    top: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    position: relative;
+}
+
+.block__body_text>a>img {
+    margin-left: 5px;
+}
+
+.block__body_text {
+    position: relative;
+    top: 20px;
+}
+
+
+/*ADVANTAGES*/
+
+.advantages {
+    margin-top: 50px;
+}
+
+.advantages__cards {
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.advantages__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    color: #272727;
+}
+
+.advantages__text {
+    top: 60px;
+    position: relative;
+}
+
+.advantages__text_title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #01090D;
+}
+
+.advantages__text_desc {
+    width: 380px;
+    font-weight: 400;
+    color: #536270;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.advantages__card {
+    margin-bottom: 160px;
+}
+
+
+/* ТАРИФЫ */
+
+.tariffs {
+    background: linear-gradient(100.71deg, #3651CD -0.72%, #6681FF 99.08%);
+    height: 100vh;
+}
+
+.tariffs__text {
+    color: white;
+    top: 50px;
+    position: relative;
+}
+
+.tariffs__text p {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.tariffs__text span {
+    font-weight: 400;
+    font-size: 16px;
+    top: 10px;
+    position: relative;
+}
+
+.tariffs__cards {
+    position: relative;
+    margin-top: 150px;
+    display: flex;
+}
+
+.tariffs__cards-2 {
+    position: relative;
+    margin-top: 28px;
+    display: flex;
+}
+
+.tariff_vk {
+    width: 400px;
+    height: 185px;
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tariff_vk img {
+    width: 87px;
+}
+
+.tariff_vk>.tariff_content {
+    display: flex;
+    font-weight: 700;
+    color: #3651CD;
+    font-size: 44px;
+    margin-top: 12%;
+    margin-left: 7%;
+}
+
+.tariff_name {
+    margin-left: 30px;
+    margin-top: 16px;
+}
+
+.tariff_yt {
+    width: 530px;
+    height: 185px;
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 27px;
+}
+
+.tariff_yt img {
+    width: 87px;
+}
+
+.tariff_yt>.tariff_content {
+    display: flex;
+    font-weight: 700;
+    color: #3651CD;
+    font-size: 44px;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.tariff_inst {
+    width: 528px;
+    height: 350px;
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tariff_inst img {
+    width: 140px;
+    margin-left: 20px;
+}
+
+.tariff_inst>.tariff_content {
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    color: #3651CD;
+    font-size: 60px;
+    margin-top: 10%;
+    margin-left: 0%;
+}
+
+.tariff_tk {
+    width: 400px;
+    height: 160px;
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 27px;
+}
+
+.tariff_tk img {
+    width: 87px;
+}
+
+.tariff_tk>.tariff_content {
+    display: flex;
+    font-weight: 700;
+    color: #3651CD;
+    font-size: 44px;
+    margin-top: 10%;
+    margin-left: 12%;
+}
+
+.tariff_tg {
+    margin-top: 27px;
+    width: 400px;
+    height: 160px;
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 27px;
+}
+
+.tariff_tg img {
+    width: 87px;
+}
+
+.tariff_tg>.tariff_content {
+    display: flex;
+    font-weight: 700;
+    color: #3651CD;
+    font-size: 44px;
+    margin-top: 10%;
+    margin-left: 12%;
+}
+
+.tariff__background_text {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.1);
+    transform: rotate(90deg);
+    font-weight: 800;
+    font-size: 150px;
+    left: 56%;
+    top: 309%;
+}
+
+.tariff_card {
+    transition: 0.4s;
+    color: #3651CD;
+    border: 2px solid transparent;
+}
+
+.tariff_card:hover {
+    background: transparent;
+    border: 2px solid white;
+}
+
+.tariff_name {
+    transition: 0.4s;
+}
+
+.tariff_card:hover .tariff_name {
+    background: transparent;
+    color: white;
+}
+
+
+/* FOOTER LANDING */
+
+.land_footer {
+    background: linear-gradient(180deg, #FFFFFF 0%, #D8ECFF 136.52%);
+    height: 140px;
+}
+
+.land__footer_body {
+    display: flex;
+    justify-content: space-between;
+    top: 40px;
+    position: relative;
+}
+
+.and_footer_content {
+    display: block;
+}
+
+.land_footer_content>p>a>span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 10px;
+    color: #323232;
+    background-image: url(../image/landing/line.svg);
+    background-repeat: repeat-x;
+    background-position: 0 20px;
+}
+
+.footer-contacts {
+    margin-top: 10px;
+}
+
+.footer-contacts a {
+    margin-right: 5px;
+}
+
+.land_footer_links {
+    position: relative;
+    bottom: 10px;
+}
+
+
+/* FEES */
+
+.navbar__register i {
+    position: relative;
+    right: 10px;
+    font-size: 18px;
+}
+
+.profile__menu {
+    background: url(../image/fees/profile_menu.svg);
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    height: 170px;
+    position: absolute;
+    width: 190px;
+    left: 70.5%;
+    padding-left: 2%;
+    padding-top: 2.5%;
+    color: #536270;
+    font-size: 18px;
+    font-weight: 400;
+    display: none;
+    top: 55px;
+    z-index: 999;
+}
+
+.profile__menu_choise {
+    display: flex;
+    margin-bottom: 22px;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+}
+
+.profile__menu_choise p {
+    position: absolute;
+    left: 40px;
+}
+
+.profile__menu_choise:hover {
+    margin-left: 5px;
+}
+
+.profile_menu_active {
+    display: block !important;
+    animation-name: profile_menu_show;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes profile_menu_show {
+    0% {
+        transform: scale(0);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.profile_menu_inactive {
+    animation-name: profile_menu_hide;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+@keyframes profile_menu_hide {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+
+/* FEES BODY */
+
+.fees__body {
+    background: #151F28;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+.fees_poster {
+    background: url(../image/fees/menu_poster_dark.svg);
+}
+
+.poster__body {
+    width: 1200px;
+    height: 293px;
+    border-radius: 11px;
+    top: 50px;
+    position: relative;
+}
+
+.poster__body_info p {
+    font-weight: 300;
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.poster__body_title {
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.poster__body_info {
+    margin-top: 20px;
+    display: flex;
+    width: 600px;
+    position: relative;
+    left: 3%;
+    top: 20%;
+}
+
+.poster__body_title {
+    position: relative;
+    left: 3%;
+    top: 15%;
+}
+
+
+/* FEES SORTER */
+
+.fees_sorter {
+    position: relative;
+    top: 80px;
+    width: 1200px;
+    background: #222F3B;
+    height: 75px;
+    border-radius: 11px;
+    display: flex;
+}
+
+.fees_sorter_item img {
+    width: 32px;
+    cursor: pointer;
+}
+
+.fees_sorter_body {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    margin-right: 40px;
+}
+
+.fees_sorter_item p {
+    position: relative;
+    top: 5px;
+    font-size: 18px;
+    color: #536270;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.fees_sorter_item_hr {
+    top: 17px;
+    height: 3px;
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(127, 191, 255, 1);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(127, 191, 255, 1);
+    box-shadow: 0px 0px 24px 0px rgba(127, 191, 255, 1);
+    background: #7FBFFF;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    width: 0%;
+    transition: 0.2s;
+}
+
+.fees_sorter_item:hover .fees_sorter_item_hr {
+    width: 100%;
+}
+
+
+/* FEES LIST */
+
+.fees__list {
+    margin-top: 110px;
+    width: 1200px;
+    background: #222F3B;
+    height: auto;
+    border-radius: 11px;
+}
+
+.fees_list_text {
+    display: flex;
+    font-weight: 400;
+    font-size: 18px;
+    color: #536270;
+}
+
+.list__header_hr {
+    height: 1px;
+    color: #EFF4FA;
+    background: #EFF4FA;
+    border: none;
+    margin-top: 40px;
+}
+
+.list_text_service {
+    position: relative;
+    top: 20px;
+    left: 70px;
+}
+
+.list_text_desc {
+    position: relative;
+    top: 20px;
+    left: 370px;
+}
+
+.list_text_price {
+    position: relative;
+    top: 20px;
+    left: 720px;
+}
+
+.fees_item {
+    display: flex;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.fees_item_name p {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    width: 300px;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.fees_item_name img {
+    width: 20%;
+}
+
+.fees_item_name {
+    display: flex;
+    position: relative;
+    left: 70px;
+}
+
+.fees_desc_item {
+    display: flex;
+    background: #3F5060;
+    color: #5E97D8;
+    padding: 7px 18px 7px 18px;
+    border-radius: 14px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fees_desc_item p {
+    margin-left: 10px;
+}
+
+.fees_item_desc {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    position: relative;
+    left: 55px;
+}
+
+.fees_item_price {
+    top: 35px;
+    left: 140px;
+    position: relative;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.fees_item_button {
+    background: #3F5060;
+    border: 1px solid #3F5060;
+    box-sizing: border-box;
+    border-radius: 9px;
+    width: 142px;
+    height: 35px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    left: 220px;
+    top: 25px;
+}
+
+.list__item_hr {
+    height: 1px;
+    color: #EFF4FA;
+    background: #EFF4FA;
+    border: none;
+}
