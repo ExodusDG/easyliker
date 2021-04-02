@@ -414,8 +414,9 @@ a {
     transform: rotate(90deg);
     font-weight: 800;
     font-size: 150px;
-    left: 40%;
-    top: -100px;
+    left: 55%;
+    top: -300px;
+    width: 800px;
 }
 
 .tariff_card {
@@ -2776,8 +2777,8 @@ body[data-theme="dark"] {
         font-size: 16px;
     }
     .tariff__background_text {
-        left: 42%;
-        top: -140px;
+        left: 59%;
+        top: -300px;
     }
     .tariffs {
         height: auto;
